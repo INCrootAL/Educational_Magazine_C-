@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF336CE4-011D-4177-845E-3769DD4D46A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ottb</RootNamespace>
+    <AssemblyName>ottb</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="autorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="autorization.Designer.cs">
+      <DependentUpon>autorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jurnal1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jurnal1.Designer.cs">
+      <DependentUpon>Jurnal1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jurnal2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jurnal2.Designer.cs">
+      <DependentUpon>Jurnal2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jurnal3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jurnal3.Designer.cs">
+      <DependentUpon>Jurnal3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jurnal3s.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jurnal3s.Designer.cs">
+      <DependentUpon>Jurnal3s.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jurnal4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jurnal4.Designer.cs">
+      <DependentUpon>Jurnal4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jurnal4s.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jurnal4s.Designer.cs">
+      <DependentUpon>Jurnal4s.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kafedra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kafedra.Designer.cs">
+      <DependentUpon>Kafedra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtdelOT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtdelOT.Designer.cs">
+      <DependentUpon>OtdelOT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Podrazdelenie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Podrazdelenie.Designer.cs">
+      <DependentUpon>Podrazdelenie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shtat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shtat.Designer.cs">
+      <DependentUpon>Shtat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sinstitut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sinstitut.Designer.cs">
+      <DependentUpon>Sinstitut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Skafedra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Skafedra.Designer.cs">
+      <DependentUpon>Skafedra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spravka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spravka.Designer.cs">
+      <DependentUpon>Spravka.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="autorization.resx">
+      <DependentUpon>autorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jurnal1.resx">
+      <DependentUpon>Jurnal1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jurnal2.resx">
+      <DependentUpon>Jurnal2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jurnal3.resx">
+      <DependentUpon>Jurnal3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jurnal3s.resx">
+      <DependentUpon>Jurnal3s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jurnal4.resx">
+      <DependentUpon>Jurnal4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jurnal4s.resx">
+      <DependentUpon>Jurnal4s.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kafedra.resx">
+      <DependentUpon>Kafedra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtdelOT.resx">
+      <DependentUpon>OtdelOT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Podrazdelenie.resx">
+      <DependentUpon>Podrazdelenie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Shtat.resx">
+      <DependentUpon>Shtat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sinstitut.resx">
+      <DependentUpon>Sinstitut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skafedra.resx">
+      <DependentUpon>Skafedra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spravka.resx">
+      <DependentUpon>Spravka.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\от.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\от3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\от4.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
